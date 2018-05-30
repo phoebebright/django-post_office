@@ -90,6 +90,4 @@ def get_sending_order():
     return get_config().get('SENDING_ORDER', ['-priority'])
 
 
-CONTEXT_FIELD_CLASS = get_config().get('CONTEXT_FIELD_CLASS',
-                                       'jsonfield.JSONField')
-context_field_class = import_attribute(CONTEXT_FIELD_CLASS)
+

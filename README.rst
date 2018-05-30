@@ -2,6 +2,7 @@ Fork of original project to force use of django's JSONField to avoid re-encoding
 https://bitbucket.org/schinckel/django-jsonfield/issues/57/cannot-use-in-the-same-project-as-djangos
 and here: https://code.djangoproject.com/ticket/27675#comment:8
 
+This has required removing all references to jsonfield and squashing the migrations.
 
 ==================
 Django Post Office
@@ -446,7 +447,7 @@ setting ``SENDING_ORDER``. For example, if you want to send queued emails in FIF
 
 Context Field Serializer
 ------------------------
-
+NOTE - removed from this fork and context field is forced to JSONField format
 If you need to store complex Python objects for deferred rendering
 (i.e. setting ``render_on_delivery=True``), you can specify your own context
 field class to store context variables. For example if you want to use

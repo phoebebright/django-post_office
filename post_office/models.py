@@ -18,7 +18,7 @@ from post_office.fields import CommaSeparatedEmailField
 
 from .compat import text_type, smart_text
 from .connections import connections
-from .settings import context_field_class, get_log_level
+from .settings import get_log_level
 from .validators import validate_email_with_name, validate_template_syntax
 
 
@@ -65,7 +65,7 @@ class Email(models.Model):
     template = models.ForeignKey('post_office.EmailTemplate', blank=True,
                                  null=True, verbose_name=_('Email template'),
                                  on_delete=models.CASCADE)
-    context = context_field_class(_('Context'), blank=True, null=True)
+    context = JSONField(_('Context'), blank=True, null=True)
     backend_alias = models.CharField(_('Backend alias'), blank=True, default='',
                                      max_length=64)
 
