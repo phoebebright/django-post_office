@@ -1,3 +1,8 @@
+Fork of original project to force use of django's JSONField to avoid re-encoding error described here: 
+https://bitbucket.org/schinckel/django-jsonfield/issues/57/cannot-use-in-the-same-project-as-djangos
+and here: https://code.djangoproject.com/ticket/27675#comment:8
+
+
 ==================
 Django Post Office
 ==================
