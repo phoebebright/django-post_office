@@ -4,6 +4,8 @@ and here: https://code.djangoproject.com/ticket/27675#comment:8
 
 This has required removing all references to jsonfield and squashing the migrations.
 
+THIS WILL NOT WORK IF USING MYSQL
+
 ==================
 Django Post Office
 ==================
